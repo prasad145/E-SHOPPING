@@ -1,68 +1,174 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <!DOCTYPE html>
-    <html>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User | index</title>
+    <!-- <link href="/templates/index.css" rel="stylesheet"> -->
+</head>
 
-    <head>
-        <meta charset="ISO-8859-1">
-        <title>Login</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    </head>
+<style>
+  
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #24305e;
+  font-family: sans-serif;
+}
 
-    <body class="p-4" style="background-color:#15151A;">
-    	
-        <section class="container">
-			<h3>${messege}</h3>
-			<h3>${welcome}</h3>
-			<h3>${error}</h3>
-            <div class="d-flex align-items-center" style="flex-direction: column;margin-top: 18px;border-radius:12px">
-                <div class="col-12 col-lg-4 col-sm-6 p-4">
-                    <h2 style="margin-top: 18px;color:white;font-weight:bold;text-align:left;">E-Shopping</h2>
+.title {
+  font-size: 23px;
+  color: #f76c6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 10px;
+}
 
-                    <div class="p-4" style="background-color:white;border-radius: 10px;margin-top:20px">
-                        <h1 style="font-weight:bold;font-size:29px">Log in</h1>
-                        <h1 style="font-size:16px">Don't Have An Account?<a style="color:#1E74FF" href="register"> Register now</a></h1>
-                        <form action="login" method="post">
-                            <div class="form-label-group" style="margin-top: 8px;">
-                                <label style="font-family: 'Poppins', sans-serif;font-weight: 100; font-size: 12px; color:rgb(142, 142, 142)" for="inputPassword">Username</label>
-                                <input placeholder="Username" class="form-control" type="text" name="username" />
+.title h1 {
+  padding: 5px 10px;
+  border: solid #ffffff;
+  border-width: 5px 0px;
+}
 
-                            </div>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px;
+  background: #f76c6c;
+  border-radius: 17px;
+}
 
-                            <div class="form-label-group" style="margin-top: 8px;">
-                                <label style="font-family: 'Poppins', sans-serif;font-weight: 100; font-size: 12px; color:rgb(142, 142, 142)" for="inputPassword">Password</label>
-                                <input placeholder="Password" class="form-control" type="password" name="password" />
+.container h1 {
+  color: #24305e;
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: black; */
+  /* text-decoration: underline; */
 
-                            </div>
-                            <button style="background-color:rgb(54, 71, 223);border: 0;margin-top:40px;font-family: 'Poppins', sans-serif;border-radius: 6px;width:100%" class="primaryAction btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-                        </form>
-                    </div>
+}
+
+label {
+  color: #ffffff;
+  font-size: 17px;
+}
+#email, #password {
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 8px;
+  margin: 10px;
+}
+
+#email:focus, #password:focus {
+  outline-width: 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #24305e;
+  border-radius: 19px;
+  margin: 20px auto 15px 65px;
+  color: #ffffff;
+  outline: none;
+  background-color: #24305e;
+}
+
+#submit:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.links-box {
+  display: block;
+  flex-direction: row;
+  /* width: 100%; */
+  /* height: 40px; */
+  /* justify-items: center; */
+}
+
+.links-box a {
+  display: inline;
+  width: 50%;
+  color: #000;
+  text-decoration: none;
+}
+
+.links-box a:hover {
+  color: #9CF6F6;
+}
+
+ 
+#new {
+  padding-left: 25px;
+}
+
+#forget {
+  padding-right: 25px;
+} 
+h3{
+	text-align:center;
+	color:white;
+}
+</style>
+<body>
+<header>
+    <div class="title">
+        <h1>E-SHOPPING</h1>
+    </div>
+    <!-- <h1>Create Account</h1> -->
+</header>
+<main>
+	<h3>${messege}</h3>
+    <h3>${welcome}</h3>
+    <div class="container">
+
+        <div class="container-items">
+            <h1> User Login </h1>
+        </div>
+        <div class="container-items">
+            <form action="login" method="post">
+                <div class="email">
+                    <input type="text" name="username" id="email" placeholder="User ID">
                 </div>
+
+                <div class="container-items">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="error-message">
+                    <p><u>${error}</u></p>
+                </div>
+                <div class="container-items">
+                    <button type="submit" id="submit" name="Create Account">Login</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-items">
+            <div class="links-box">
+                <a id="new" href="register"> New Registration?</a>
             </div>
-        </section>
-
-
-        <style>
-        	h3{
-        		text-align: center;
-        		color: white;
-        	}
-            .form-control {
-                display: block;
-                width: 100%;
-                padding: 0.56rem 0.8rem;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 1.5;
-                color: #616368;
-                background-color: #fff;
-                background-clip: padding-box;
-                border: 1px solid #D7D6DA;
-                border-radius: 0.25rem;
-               
-            }
-        </style>
-    </body>
-
-    </html>
+        </div>
+    </div>
+</main>
+</body>
+</html>

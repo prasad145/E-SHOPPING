@@ -38,6 +38,7 @@ public class login extends HttpServlet {
 		String username = request.getParameter("username");
         String password = request.getParameter("password");
         response.setContentType("text/html");
+        boolean isLoggedIn = false;
         try {
         	Connection con = DBconnector.initializeDatabase();
         	PreparedStatement st = con.prepareStatement("select * from users where name = ? and password = ?");
@@ -47,15 +48,19 @@ public class login extends HttpServlet {
         	
 			if(rs.next())
         	{  
+				isLoggedIn = true;
 				System.out.println("username : " + rs.getString(2));
     			System.out.println("password : " + rs.getString(3));
         		System.out.println("entered if condition");
+        		System.out.println(isLoggedIn);
+        		request.setAttribute("loggedIn", isLoggedIn);
                 RequestDispatcher rd=request.getRequestDispatcher("home");  
                 rd.forward(request, response);  
             }
         	else{  
+        		isLoggedIn = false;
         		System.out.println("entered else condition");
-                request.setAttribute("error", "Incorrect Password!!");  
+                request.setAttribute("error", "Incorrect Credentials!!");  
                 RequestDispatcher rd = request.getRequestDispatcher("index.jsp");  
                 rd.include(request, response);  
             }

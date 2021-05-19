@@ -66,7 +66,7 @@ public class index extends HttpServlet {
         	System.out.println("Successfully inserted!");
         	PrintWriter out = response.getWriter();
             try {
-                out.println("details : "+ username + " " + useremail + " " + password);
+//                out.println("details : "+ username + " " + useremail + " " + password);
                 request.setAttribute("messege", "You successfully registered!!");
                 request.setAttribute("welcome", "login using the account you created!! Happy shopping :)");
                 request.getRequestDispatcher("index.jsp").include(request, response);

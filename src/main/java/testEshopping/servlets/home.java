@@ -32,11 +32,18 @@ public class home extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        if((boolean)request.getAttribute("loggedIn") == true) {
+        	System.out.println("user logged in!!!(entered if condition)");        	
         try {
         	request.getRequestDispatcher("home.jsp").include(request, response);
         }
         finally {
         	out.close();
+        }
+        }
+        else {
+        	request.setAttribute("messege", "You need to login first!");
+        	request.getRequestDispatcher("index.jsp").include(request, response);
         }
 	}
     
