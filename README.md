@@ -1,12 +1,14 @@
 <h2>E-SHOPPING</h2>
 <div>
  <p>
-  A <strong>E-SHOPPING</strong> is a web platform built using J2EE Frameworks, where it has set of stationary items.When user buys any stationary item is from this application quantity of item ordered will be added to the cart. 
-  Here Major funciton of this application is to 
+  A <strong>E-SHOPPING</strong> is a web platform built using J2EE Frameworks, where it has set of stationary items. When user buys any stationary item, quantity of item ordered will be added to the cart. 
+  <br>
+  Here Major function of this application is to:
   <ul>
     <li>calculate and display the bulkly ordered items, bulky in the sense quantity of item which is ordered more than 4.</li>
     <li>calculate and display the Actual total amount</li>
     <li>apply offer on the Actual total depending on different conditions and display the special total amount to be paid</li>    
+  </ul>
  </p>
 <div>
 <h3> Tools and Frameworks used:<h3>
