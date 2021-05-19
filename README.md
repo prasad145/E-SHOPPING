@@ -49,4 +49,6 @@
 <img src="https://github.com/prasad145/E-SHOPPING/blob/master/screenshots/details.JPG" width="850" height ="500">
 <hr>
 <h1 style="text-align:center;"> THANK YOU </h1>
+```
 ![](http://i0.kym-cdn.com/photos/images/original/000/976/339/ded.png) 
+```
