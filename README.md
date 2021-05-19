@@ -5,7 +5,7 @@
   <br>
   Here Major function of this application is to:
   <ul>
-    <li>calculate and display the bulkly ordered items, bulky in the sense quantity of item which is ordered more than 4.</li>
+    <li>calculate and display the bulkly ordered items, bulky in the sense quantity of item which is ordered more than 4</li>
     <li>calculate and display the Actual total amount</li>
     <li>apply offer on the Actual total depending on different conditions and display the special total amount to be paid</li>    
   </ul>
@@ -14,13 +14,16 @@
 <h3> Tools and Frameworks used:<h3>
 <hr>
 <br>
+<p>Programming Language:</p>
 <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
 <br>
+<p>Front-End UI Design:</p>
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/><img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
- <br>
 <br>
+<p>Source Code Management:</p> 
 <img alt="Git" src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"/><img alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
 <br>
+<p>Database:</p>
 <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
 <br>
 <hr>
