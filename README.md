@@ -1,5 +1,6 @@
 <h2>E-SHOPPING</h2>
 <div>
+ [![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
  <p>
   A <strong>E-SHOPPING</strong> is a web platform built using J2EE Frameworks, where it has set of stationary items. When user buys any stationary item, quantity of item ordered will be added to the cart. 
   <br>
