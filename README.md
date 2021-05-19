@@ -1,6 +1,5 @@
 <h2>E-SHOPPING</h2>
 <div>
- [![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
  <p>
   A <strong>E-SHOPPING</strong> is a web platform built using J2EE Frameworks, where it has set of stationary items. When user buys any stationary item, quantity of item ordered will be added to the cart. 
   <br>
@@ -49,6 +48,6 @@
 <img src="https://github.com/prasad145/E-SHOPPING/blob/master/screenshots/details.JPG" width="850" height ="500">
 <hr>
 <h1 style="text-align:center;"> THANK YOU </h1>
-```
-![](http://i0.kym-cdn.com/photos/images/original/000/976/339/ded.png) 
-```
+ 
+![elliot](https://i.kym-cdn.com/photos/images/newsfeed/001/176/251/4d7.png) 
+
