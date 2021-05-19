@@ -17,11 +17,14 @@
 <p>Programming Language:</p>
 <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
 <br>
+<br>
 <p>Front-End UI Design:</p>
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/><img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 <br>
+<br>
 <p>Source Code Management:</p> 
 <img alt="Git" src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"/><img alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+<br>
 <br>
 <p>Database:</p>
 <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
@@ -30,11 +33,15 @@
 <br>
 <h3> Screen Shots: </h3>
 <hr>
+<p>User Registration Page:</p>
 <img src="https://github.com/prasad145/E-SHOPPING/blob/master/screenshots/registration.JPG" width="850" height ="500">
 <hr>
+<p>User Login Page:</p>
 <img src="https://github.com/prasad145/E-SHOPPING/blob/master/screenshots/login.JPG" width="850" height ="500">
 <hr>
+<p>Application Home Page:</p>
 <img src="https://github.com/prasad145/E-SHOPPING/blob/master/screenshots/home.JPG" width="850" height ="500">
 <hr>
+<p>Order Details Page:</p>
 <img src="https://github.com/prasad145/E-SHOPPING/blob/master/screenshots/details.JPG" width="850" height ="500">
 
