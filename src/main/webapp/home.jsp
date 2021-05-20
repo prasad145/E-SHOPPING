@@ -86,10 +86,6 @@
           </div>
 	</section>
 </main>
-
-	  
-<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>	 
-
 <style>
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 #name{

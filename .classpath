@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="D:/DXC/DXC project EAR Dependencies/jstl-1.2.jar"/>
 	<classpathentry kind="lib" path="D:/DXC/DXC project EAR Dependencies/mysql-connector-java-8.0.13.jar"/>
 	<classpathentry kind="lib" path="D:/DXC/DXC project EAR Dependencies/servlet-api-2.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
